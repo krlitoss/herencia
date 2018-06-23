@@ -15,10 +15,19 @@ public class Main {
     
     public static void main(String[] args) {
         
-        //ArrayList<Integer> listas = new ArrayList<Integer>();
+        ArrayList<Empleado> listas = new ArrayList<Empleado>();
+        
+        Empleado empleado1 = new Empleado ();
+        listas.add(empleado1);
+        
+        Empleado empleado2 = new Empleado ("Chicharito", "Hernandez", "Hernandez", 60, 1000000);
+        listas.add(empleado2);
         
         
+        for (int i=0; i<listas.size(); i++){
+            System.out.println(listas.get(i).obtenerDatos());
         
+        }
         
     }
     
